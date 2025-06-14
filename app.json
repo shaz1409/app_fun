@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Quote Wallpapers",
+    "slug": "quote-wallpapers",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.quotewallpapers",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to save wallpapers.",
+        "NSPhotoLibraryAddUsageDescription": "This app needs access to your photo library to save wallpapers.",
+        "UIBackgroundModes": ["remote-notification"]
+      }
+    },
+    "android": {
+      "package": "com.quotewallpapers",
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE",
+        "SET_WALLPAPER",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#f4511e"
+        }
+      ]
+    ]
+  }
+} 
